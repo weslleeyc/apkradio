@@ -1,4 +1,3 @@
-<!-- script.js -->
 // URL do streaming da rádio
 const radioUrl = "https://stm2.aovivodigital.com.br:11354/stream";
 
@@ -36,3 +35,17 @@ function stopEqualizer() {
         bar.style.animation = "none";
     });
 }
+
+// Botão de Compartilhar
+const shareBtn = document.getElementById("shareBtn");
+shareBtn.addEventListener("click", () => {
+    if (navigator.share) {
+        navigator.share({
+            title: "Rádio Play Mix",
+            text: "Ouça a Rádio Play Mix ao vivo!",
+            url: window.location.href
+        }).catch(console.error);
+    } else {
+        alert("Seu navegador não suporta compartilhamento.");
+    }
+});
