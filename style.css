@@ -90,11 +90,16 @@ body, html {
 }
 
 .banner-container {
-    width: 320px;
-    height: 100px;
+    position: fixed; /* Fixa o banner no topo */
+    top: 0; /* Cola no topo */
+    left: 50%; /* Centraliza */
+    transform: translateX(-50%); /* Garante centralização */
+    width: 320px; /* Largura fixa */
+    height: 80px; /* Ajuste da altura para melhor visualização */
     overflow: hidden;
     border-radius: 10px;
-    margin-bottom: 10px;
+    background-color: transparent; /* Fundo transparente */
+    z-index: 1000; /* Mantém acima dos outros elementos */
 }
 
 .banner-container img {
