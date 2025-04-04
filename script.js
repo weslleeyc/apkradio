@@ -1,5 +1,5 @@
 // URL do streaming da rádio
-const radioUrl = "http://stm2.aovivodigital.com.br:11354";
+const radioUrl = "http://stm2.aovivodigital.com.br:11354/stream";
 
 // Criar o elemento de áudio
 const audio = new Audio(radioUrl);
