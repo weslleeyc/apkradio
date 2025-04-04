@@ -49,3 +49,12 @@ shareBtn.addEventListener("click", () => {
         alert("Seu navegador não suporta compartilhamento.");
     }
 });
+
+// Rotação de banners
+const banners = ["banner1.jpg", "banner2.jpg"];
+let currentBanner = 0;
+
+setInterval(() => {
+    currentBanner = (currentBanner + 1) % banners.length;
+    document.getElementById("banner").src = banners[currentBanner];
+}, 5000); // troca a cada 5 segundos
