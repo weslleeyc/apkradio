@@ -51,7 +51,7 @@ shareBtn.addEventListener("click", () => {
 });
 
 // Rotação de banners
-const banners = ["banner1.jpg", "banner2.jpg"];
+const banners = ["banner1.png", "banner2.png"];
 let currentBanner = 0;
 
 setInterval(() => {
