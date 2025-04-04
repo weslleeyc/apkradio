@@ -54,7 +54,14 @@ shareBtn.addEventListener("click", () => {
 const banners = ["banner1.png", "banner2.png"];
 let currentBanner = 0;
 
+const bannerElement = document.getElementById("banner");
+
+// Define o tamanho do banner
+bannerElement.style.width = "100%"; // Mantém a largura ajustável
+bannerElement.style.maxHeight = "80px"; // Define uma altura menor
+
 setInterval(() => {
     currentBanner = (currentBanner + 1) % banners.length;
-    document.getElementById("banner").src = banners[currentBanner];
+    bannerElement.src = banners[currentBanner];
 }, 5000); // troca a cada 5 segundos
+
