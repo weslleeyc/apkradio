@@ -91,7 +91,7 @@ body, html {
 
 .banner-container {
     position: fixed; /* Fixa o banner no topo */
-    top: 10px; /* Cola no topo */
+    top: 17px; /* Cola no topo */
     left: 50%; /* Centraliza */
     transform: translateX(-50%); /* Garante centralização */
     width: 320px; /* Largura fixa */
