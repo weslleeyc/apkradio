@@ -1,0 +1,76 @@
+/* Configuração geral */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+/* Fundo personalizável */
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('background.png') no-repeat center center/cover;
+    z-index: -1;
+}
+
+/* Logo */
+.logo img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Player */
+.player {
+    position: relative;
+}
+
+#playPauseBtn {
+    width: 80px;
+    height: 80px;
+    font-size: 30px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#playPauseBtn:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+/* Botões flutuantes */
+.floating-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.floating-buttons a {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.floating-buttons a:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
