@@ -52,6 +52,13 @@
             <img src="share.png" alt="Compartilhar">
         </button>
     </div>
+  <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js')
+      .then(reg => console.log('✅ Service Worker registrado com sucesso:', reg))
+      .catch(err => console.log('❌ Erro ao registrar o Service Worker:', err));
+  }
+ </script>
 
 </body>
 </html>
